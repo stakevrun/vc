@@ -1,0 +1,8 @@
+[Unit]
+Description=vrün vc
+
+[Service]
+DynamicUser=yes
+StateDirectory=vrunvc-%i
+Restart=on-failure
+ExecStart=/usr/share/vrün/vc.fish %i
